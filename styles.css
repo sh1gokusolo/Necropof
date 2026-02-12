@@ -495,3 +495,59 @@ body::after {
 }
 
 
+/* ========== ИСПРАВЛЕНИЕ ОБРЕЗАННОГО ТЕКСТА ========== */
+
+/* 1. Убираем возможные ограничения высоты */
+.deal-body,
+.deal-body p,
+.deal-step,
+.deal-block p {
+  height: auto !important;
+  max-height: none !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+  display: block !important;
+}
+
+/* 2. Запрещаем nowrap везде */
+.deal-body p,
+.deal-block p,
+.crypto-line,
+span, div, p {
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+}
+
+/* 3. Специально для шага 2 — принудительно показываем весь текст */
+.deal-step:nth-child(2) .deal-body p,
+.deal-step:nth-child(2) .deal-body {
+  white-space: normal !important;
+  text-overflow: clip !important;
+  overflow: visible !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* 4. Крипто-адрес */
+.crypto-line {
+  word-break: break-all !important;
+  white-space: normal !important;
+}
+
+.crypto-line span:last-child {
+  word-break: break-all !important;
+  max-width: 100% !important;
+}
+
+/* 5. Глобальная защита от скрытия текста */
+.card * {
+  max-width: 100%;
+}
+
+/* 6. Убираем gray-flow если мешает */
+.gray-flow {
+  opacity: 0.2; /* уменьшаем, чтобы не перекрывало */
+}
