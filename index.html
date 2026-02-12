@@ -9,7 +9,6 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="icon.png">
 
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -20,18 +19,18 @@
       <div class="header">
         <div class="avatar-wrap">
           <div class="avatar">
-  <video autoplay muted loop playsinline>
-    <source src="avatar-video.mp4" type="video/mp4">
-    <!-- Фолбэк если браузер не поддерживает видео -->
-    Ваш браузер не поддерживает видео
-  </video>
-</div>
+            <video autoplay muted loop playsinline>
+              <source src="avatar-video.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео
+            </video>
+          </div>
         </div>
         <div class="lang-inside" id="langSwitch">
           <button class="lang-btn active" data-lang="ru">RU</button>
           <button class="lang-btn" data-lang="en">EN</button>
         </div>
-        <div class="title" data-i18n="title">Hatovskiy Guarantor</div>     <div class="subtitle" data-i18n="subtitle">Гарант сделок • Низкая комиссия • Безопасные сделки</div>
+        <div class="title" data-i18n="title">Hatovskiy Guarantor</div>
+        <div class="subtitle" data-i18n="subtitle">Гарант сделок • Низкая комиссия • Безопасные сделки</div>
       </div>
 
       <div class="metrics">
@@ -47,39 +46,47 @@
 
       <div class="badge" data-i18n="info">Информация</div>
       <div class="section-title" data-i18n="contacts">Контакты и сообщества</div>
+      
       <div class="links">
+        <!-- Личные сообщения -->
         <a href="https://t.me/hatovskiy" class="link-card" target="_blank" rel="noreferrer">
           <div class="link-info">
             <div class="link-title" data-i18n="dmTitle">Личные сообщения</div>
-            <span class="t-name" data-i18n="dmSub">Связь для оформление сделок</span>
+            <span class="t-name" data-i18n="dmSub">Связь для оформления сделок</span>
           </div>
           <div class="badge-tg">
             <span class="k-dot"></span>
             t.me/hatovskiy
           </div>
         </a>
-        <a href="https://t.me/adapthat" class="link-card" target="_blank" rel="noreferrer">
+
+        <!-- Новостной канал -->
+        <a href="https://t.me/hatovskiynews" class="link-card" target="_blank" rel="noreferrer">
           <div class="link-info">
-            <div class="link-title">Adapter<div>         <span class="t-name" data-i18n="mainChannel">Новостной канал</span>
+            <div class="link-title" data-i18n="adapterTitle">Adapter</div>
+            <span class="t-name" data-i18n="mainChannel">Новостной канал</span>
           </div>
           <div class="badge-tg">
             <span class="k-dot"></span>
-           https://t.me/hatovskiynews
+            t.me/hatovskiynews
           </div>
         </a>
-        <a href="https://hatovskiynews.t.me" class="link-card" target="_blank" rel="noreferrer">
+
+        <!-- Отзывы -->
+        <a href="https://t.me/repaoeczy" class="link-card" target="_blank" rel="noreferrer">
           <div class="link-info">
             <div class="link-title" data-i18n="reviews">Reviews</div>
-    n class="t-name" <data-i18n="reviewsSub">Reviews</span>
+            <span class="t-name" data-i18n="reviewsSub">Отзывы</span>
           </div>
           <div class="badge-tg">
             <span class="k-dot"></span>
-            repaoeczy.t.me
+            t.me/repaoeczy
           </div>
         </a>
       </div>
 
       <div class="section-title mt-space" data-i18n="how">Как проходит сделка</div>
+      
       <div class="deal-flow">
         <div class="deal-step">
           <div class="deal-label">1</div>
@@ -88,6 +95,7 @@
             <p data-i18n="step1Text">ПРОДАВЕЦ даёт свои реквизиты ПОКУПАТЕЛЮ.</p>
           </div>
         </div>
+        
         <div class="deal-step">
           <div class="deal-label">2</div>
           <div class="deal-body">
@@ -95,6 +103,7 @@
             <p data-i18n="step2Text">После этого ПРОДАВЕЦ передаёт мне NFT-подарок. Я отправляю скрин, что получил его. Продавец тоже фиксирует у себя (скрин/видео).</p>
           </div> 
         </div>
+        
         <div class="deal-step">
           <div class="deal-label">3</div>
           <div class="deal-body">
@@ -132,10 +141,9 @@
       </div>
 
       <div class="foot-hint" data-i18n="foot">Проверяй юзернейм перед созданием сделки</div>
-      <div class="gray-flow"></div>
     </div>
   </div>
+  
   <script src="app.js"></script>
 </body>
 </html>
-
